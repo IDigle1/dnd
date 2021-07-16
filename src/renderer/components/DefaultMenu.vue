@@ -8,26 +8,23 @@
 </template>
 
 <script>
-  export default {
-    name: 'start-menu',
-    components: {},
-    methods: {
-    }
+export default {
+  name: 'start-menu',
+  components: {},
+  methods: {
   }
+}
 </script>
 
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-  #wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+<style lang="scss" scoped>
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .main-menu {
     width: 300px;
+    box-sizing: border-box;
   }
-
+}
 </style>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import './variables.scss';
+
+body {
+    background: $body-color;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#app {
+    padding: 10px;
+    min-height: 100vh;
+}
+
+#app, a {
+    box-sizing: border-box;
+}
+

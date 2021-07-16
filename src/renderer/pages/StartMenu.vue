@@ -1,6 +1,8 @@
 <template>
   <div id="wrapper">
     <div class="main-menu">
+      <h1 class="main-title">Dungeon & Dragons</h1>
+
       <button-link text="Создать сервер" to="/create-server" />
       <button-link text="Создать персонажа" to="/create-person" />
     </div>
@@ -8,7 +10,7 @@
 </template>
 
 <script>
-  import ButtonLink from '../components/default/ButtonLink.vue'
+  import ButtonLink from '@/components/default/ButtonLink.vue'
 
   export default {
     name: 'start-menu',
@@ -24,13 +26,18 @@
   #wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: baseline;
     box-sizing: border-box;
+    height: calc(100vh - 20px);
   }
 
   .main-menu {
     width: 300px;
+  }
+
+  .main-title {
+    font-size: 50px;
+    text-align: center;
   }
 
   .menu-button {
